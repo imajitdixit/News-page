@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+body {
+  font-family: "Inter";
+  line-height: 1.2;
+}
+
+.container {
+  padding: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 30px;
+}
+
+.navbar img {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  padding: 16px;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+
+nav a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.hero {
+  display: flex;
+  padding: 20px;
+}
+.hero1 {
+  display: flex;
+  flex-direction: column;
+  width: 71%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero1-bottom {
+  padding: 20px 0;
+  display: flex;
+}
+.hero1-left {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 4rem;
+}
+.hero1-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  line-height: 2;
+  color: hsl(236, 13%, 42%);
+  font-size: 1.3rem;
+}
+
+.butn {
+  padding: 20px 0;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  margin-top: 70px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hero2 {
+  margin-left: 40px;
+  width: 27%;
+  padding: 0 20px;
+  background-color: hsl(240, 100%, 5%);
+}
+.hero2-head {
+  color: hsl(35, 77%, 62%);
+  font-size: 64px;
+  font-weight: 700;
+}
+.hero2 hr {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.hero2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hero2 ul li {
+  padding-bottom: 0px;
+  margin: 0;
+}
+.list-head {
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  font-size: 20px;
+}
+.list-desc {
+  color: hsl(233, 8%, 79%);
+}
+
+.features {
+  margin-top: 50px;
+  display: flex;
+}
+
+.carda {
+  display: flex;
+}
+.carda img {
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.carda-item {
+  padding-left: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.num {
+  font-size: 50px;
+  font-weight: 600;
+  color: hsl(233, 8%, 79%);
+}
+.head {
+  color: hsl(240, 100%, 5%);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.desc {
+  color: hsl(236, 13%, 42%);
+  line-height: 2;
+}
+
+.attribution {
+  padding: 3rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar-toggler {
+    padding: 0;
+    border: none;
+  }
+  #offcanvasNavbar {
+    width: 75%;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    width: 50px;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .hero,
+  .features {
+    z-index: 1;
+    padding: 0;
+    margin: 0 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .hero1-bottom {
+    flex-direction: column;
+  }
+  .hero1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero1-left {
+    font-size: 2.5rem;
+  }
+  .hero1-right {
+    line-height: normal;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 1rem;
+  }
+  .hero1 img {
+    width: 90%;
+  }
+  .butn {
+    padding: 10px 12px;
+    font-size: 0.7rem;
+    margin-top: 25px;
+    font-weight: 700;
+  }
+  .hero2-head {
+    font-size: 2rem;
+  }
+  .list-head {
+    font-size: 1rem;
+  }
+  .list-desc {
+    font-size: 0.8rem;
+  }
+  .hero2 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .features {
+    flex-direction: column;
+    width: 100%;
+  }
+  .carda {
+    width: 100%;
+  }
+  .hero2 {
+    width: 90%;
+    margin: 0;
+    padding: 0 15px;
+  }
+  .features {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .carda img {
+    width: 100px;
+    padding: 0;
+  }
+  .carda {
+    margin-bottom: 20px;
+  }
+  .num {
+    font-size: 2rem;
+  }
+  .head {
+    font-size: 1rem;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
+  .desc {
+    font-size: 0.7rem;
+    line-height: normal;
+  }
+}
